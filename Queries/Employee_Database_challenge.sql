@@ -30,7 +30,7 @@ FROM unique_titles
 GROUP BY title
 ORDER BY count DESC;
 
-SELECT * FROM retiring_titles
+SELECT * FROM retiring_titles;
 
 --Deliverable 2
 SELECT DISTINCT ON (emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, t.title
