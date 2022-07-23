@@ -10,7 +10,7 @@ ON e.emp_no = t.emp_no
 WHERE e.birth_date BETWEEN '1952-01-01' AND '1955-12-31'
 ORDER BY e.emp_no
 
-SELECT * FROM retirement_titles
+SELECT * FROM retirement_titles;
 
 -- Use Dictinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (emp_no) emp_no,
@@ -43,4 +43,4 @@ ON (e.emp_no = t.emp_no)
 WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no
 
-SELECT * FROM mentorship_eligibility
+SELECT * FROM mentorship_eligibility;
